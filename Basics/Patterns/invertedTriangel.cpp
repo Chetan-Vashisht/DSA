@@ -2,19 +2,30 @@
 using namespace std;
 
 int main() {
-    int n=4;
-    for (int i = 0; i <n; i++)
+    int n =4;
+    /*for (int  i = 0; i < n; i++)
     {
-        for (int j = 0; j < i; j++)
-        {
+        for(int j=0; j<i; j++ ){
             cout<<" ";
         }
-        for (int k = 0; k < n-i; k++)
-        {
-            cout<<k+i;
+        for(int j=0; j<+n-i; j++){
+            cout<<i+1;
         }
         cout<<endl;
-        
+    }*/
+    // character verson
+    char ch='A';
+    for (int  i = 0; i < n; i++)
+    {
+        for(int j=0; j<i; j++ ){
+            cout<<" ";
+        }
+        for(int j=0; j<+n-i; j++){
+            cout<<ch;
+            // ch++;
+        }
+        ch++;
+        cout<<endl;
     }
     
     return 0;
