@@ -1,5 +1,5 @@
 #include <iostream>
-#include <climits> // Include this header for INT_MAX
+#include <climits> // Include this header for INT_MAX/_MIN
 
 using namespace std;
 // in cpp we use INT_MAX to represent +infinity
