@@ -1,8 +1,9 @@
 #include <iostream>
 #include <climits>
+#include <algorithm>
 using namespace std;
-void swapnumber(int array[], int size){
-    
+void swapnumber(int array[], int size)
+{
 }
 
 int main()
@@ -20,28 +21,64 @@ int main()
 
     //  swap min and max of array
 
-    int array[] = {11, 2, 33, 42, 51, 63, 75, 81, 93, 100};
-    int min = INT_MAX,max=INT_MIN;
-    for (int i = 0; i < 10; i++)
+    // int arr[] = {11, 2, 33, 42, 51, 63, 75, 81, 93, 100};
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
+    // int min = 0, max = 0;
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     if (arr[i] < arr[min])
+    //     {
+    //         min = i;
+    //     }
+    //     if (arr[i] > arr[max])
+    //     {
+    //         max = i;
+    //     }
+    // }
+    // swap(arr[min], arr[max]);
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+
+    // Print unique value of array
+
+    // int arr[] = {1, 2, 2, 2, 7, 9, 1, 2, 5, 6};
+    // int size = 10;
+    // for (int i = 0; i < size; i++)
+    // {
+    //     int count = 0;
+    //     for (int j = 0; j < size; j++)
+    //     {
+    //         if (arr[i] == arr[j])
+    //         {
+    //             count++;
+    //         }
+    //     }
+    //     if (count == 1)
+    //     {
+    //         cout << arr[i] << " ";
+    //     }
+    // }
+
+    // intersection of 2 array
+    int arr1[] = {1, 2, 3};
+    int s1 = 3, s2 = 3;
+    int arr2[] = {2, 3, 4};
+    for (int i = 0; i < s1; i++)
     {
-        if (min>array[i])
+        for (int j = 0; j < s2; j++)
         {
-            min = array[i];
+            if (arr1[i] == arr2[j])
+            {
+                cout << "same element are " << arr1[i] << endl;
+            }
         }
-        if (max<array[i])
-        {
-            max=array[i];
-        }
-        
-        
     }
-    swap(min,max);
-    cout<<"max "<<max<<endl;
-    cout<<"min "<<min<<endl;
-    
-
-
-
 
     return 0;
 }
