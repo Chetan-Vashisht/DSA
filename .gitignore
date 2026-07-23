@@ -20,3 +20,16 @@ bin/
 dist/
 
 tempCodeRunnerFile.cpp
+# Unix executables (files without extension or common patterns)
+a.out
+*.exe
+*.o
+*.so
+
+# Or be more specific - ignore all files without extensions in certain directories
+bin/
+build/
+dist/
+
+# Compiled C++ files
+*.out
