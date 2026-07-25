@@ -1,35 +1,27 @@
-*.o
-*.obj
-*.exe
-*.out
-*.a
-*.so
-*.dll
-*.dylib
-*.class
+# Compiled outputs anywhere in the repo tree.
+**/*.o
+**/*.obj
+**/*.exe
+**/*.out
+**/*.a
+**/*.so
+**/*.dll
+**/*.dylib
+**/*.class
+**/a.out
+**/[0-9][0-9]_*
 
+# VS Code / local environment files.
 .env
 .env.*
-
 .DS_Store
 .vscode/
 
-build/
-cmake-build-*/
-bin/
-dist/
+# Common build directories in any subfolder.
+**/build/
+**/cmake-build-*/
+**/bin/
+**/dist/
 
-tempCodeRunnerFile.cpp
-# Unix executables (files without extension or common patterns)
-a.out
-*.exe
-*.o
-*.so
-
-# Or be more specific - ignore all files without extensions in certain directories
-bin/
-build/
-dist/
-
-# Compiled C++ files
-*.out
+# Temporary files created by Code Runner anywhere in the tree.
+**/tempCodeRunnerFile.cpp
