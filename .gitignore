@@ -10,6 +10,13 @@
 **/*.class
 **/a.out
 **/[0-9][0-9]_*
+!00_DSA_Repo/
+!00_DSA_Repo/**
+!01_Time_Complexity/
+!01_Time_Complexity/**
+!02_STL/
+!02_STL/**
+!Practice.cpp
 !**/*.cpp
 
 
@@ -28,4 +35,3 @@
 # Temporary files created by Code Runner anywhere in the tree.
 **/tempCodeRunnerFile.cpp
 Practice
-Practice.cpp
