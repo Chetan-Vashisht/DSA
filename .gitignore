@@ -35,3 +35,5 @@
 # Temporary files created by Code Runner anywhere in the tree.
 **/tempCodeRunnerFile.cpp
 Practice
+# Local-only files
+Practice.cpp
