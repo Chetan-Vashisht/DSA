@@ -9,7 +9,9 @@
 **/*.dylib
 **/*.class
 **/a.out
-**/[0-9][0-9]_*
+## Allow tracking two-digit-prefixed folders (e.g., 03_Recursion).
+## The broad ignore was causing new numbered folders to be hidden from git.
+## If you need to ignore specific folders, add explicit patterns instead.
 !00_DSA_Repo/
 !00_DSA_Repo/**
 !01_Time_Complexity/
