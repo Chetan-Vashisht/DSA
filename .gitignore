@@ -9,7 +9,9 @@
 **/*.dylib
 **/*.class
 **/a.out
-**/[0-9][0-9]_*
+## Previously ignored two-digit-prefixed folders like `03_Recursion`.
+## Removed broad ignore so numbered folders are tracked by default.
+# If you want to ignore specific numbered folders, add explicit patterns instead.
 !00_DSA_Repo/
 !00_DSA_Repo/**
 !01_Time_Complexity/
