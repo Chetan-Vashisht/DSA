@@ -1,6 +1,12 @@
 
 # Recursion Notes (DSA)
 
+## Code Modules in this Directory
+
+1. [01RecursionBasics.cpp](file:///Users/chetan/Developer/DSA/03_Recursion/01RecursionBasics.cpp) - Order of Execution, Factorial, Fibonacci, Sum of N numbers, Fast Exponentiation, Two-Pointer Reversing & Palindromes.
+2. [02RecursionSubsetsAndCombinations.cpp](file:///Users/chetan/Developer/DSA/03_Recursion/02RecursionSubsetsAndCombinations.cpp) - Divide & Conquer (Binary Search & Merge Sort), Subsequences (Pick / Non-Pick), Target Sum Subsets, Combination Sum I & II.
+3. [03RecursionBacktracking.cpp](file:///Users/chetan/Developer/DSA/03_Recursion/03RecursionBacktracking.cpp) - Permutations (Visited & In-place Swapping), N-Queens with O(1) Hash diagonals, Rat in a Maze, Generate Parentheses, Sudoku Solver.
+
 ## Topic Goal
 
 Master recursion so you can confidently solve recursion, backtracking, tree, and DP foundation problems.
