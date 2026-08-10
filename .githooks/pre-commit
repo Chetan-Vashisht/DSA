@@ -1,0 +1,31 @@
+#!/bin/sh
+# Pre-commit hook to prevent adding executable files to the repository
+# This script checks staged files and aborts the commit if any staged
+# file has the executable bit set (mode 100755). It helps prevent
+# accidental commits of compiled binaries.
+
+set -e
+
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM)
+if [ -z "$STAGED_FILES" ]; then
+  exit 0
+fi
+
+BAD=0
+for f in $STAGED_FILES; do
+  # get mode from index: mode blob_sha path
+  mode=$(git ls-files --stage -- "$f" | awk '{print $1}')
+  # mode like 100644 or 100755; check for 100755
+  if [ "$mode" = "100755" ]; then
+    echo "Error: Attempting to commit executable file: $f"
+    echo "This repository should not contain built executables."
+    BAD=1
+  fi
+done
+
+if [ "$BAD" -eq 1 ]; then
+  echo "Commit aborted. Remove executables from the index or change file mode." >&2
+  exit 1
+fi
+
+exit 0
