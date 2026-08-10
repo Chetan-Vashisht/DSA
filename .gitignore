@@ -1,3 +1,34 @@
+# .gitignore - ignore common build artifacts and editor metadata
+
+# Compiled object files and outputs
+*.o
+*.obj
+*.out
+*.exe
+a.out
+
+# C++/Java bytecode
+*.class
+
+# Shared libraries
+*.so
+*.dylib
+*.dll
+
+# Build directories
+/bin/
+/build/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Ignore typical executable files created during local builds
+# (some projects produce executables with no extension)
+/*
+# If a specific executable stays tracked, untrack it then commit. See README for details.
 # Compiled outputs anywhere in the repo tree.
 **/*.o
 **/*.obj
