@@ -49,6 +49,10 @@ a.out
 !01_Time_Complexity/**
 !02_STL/
 !02_STL/**
+!03_Recursion/
+03_Recursion/**
+!03_Recursion/*.cpp
+!03_Recursion/**/*.cpp
 !Practice.cpp
 !**/*.cpp
 
