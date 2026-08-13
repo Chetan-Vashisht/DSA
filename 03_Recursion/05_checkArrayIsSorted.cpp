@@ -4,7 +4,11 @@ using namespace std;
 bool isSorted(int n , vector<int> v){
     if(n==0||n==1)return true;
     if(v[n-1]>=v[n-1]) return true;
-    
+
+}
+int is sorted {
+
+    ;
 }
 
 int main() {
