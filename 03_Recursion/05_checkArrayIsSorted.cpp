@@ -6,7 +6,7 @@ bool isSorted(int n , vector<int> v){
     if(v[n-1]>=v[n-1]) return true;
 
 }
-int is sorted {
+int isSorted {
 
     ;
 }
