@@ -69,3 +69,30 @@
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// #include <iostream>
+// using namespace std;
+// int binaryRecursive(vector<int>v ,int start, int end, int target){
+//     if(start<+end){
+//     int mid= (start+end)/2;
+//     if (v[mid]== target) return mid;
+//     if(target<mid) return binaryRecursive(v,start,mid-1,target);
+//     else return binaryRecursive(v,mid+1, end, target);
+//     }
+//     return -1;
+// }
+
+// int main() {
+
+//     vector<int> v={1,2,4,5,6,7,8,100};
+//     int target=100;
+//     cout<<binaryRecursive(v,0,v.size(),target)<<endl;
+
+
+
+
+
+
+
+    return 0;
+}
