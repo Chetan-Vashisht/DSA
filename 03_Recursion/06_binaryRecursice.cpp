@@ -87,12 +87,3 @@
 //     vector<int> v={1,2,4,5,6,7,8,100};
 //     int target=100;
 //     cout<<binaryRecursive(v,0,v.size(),target)<<endl;
-
-
-
-
-
-
-
-    return 0;
-}
