@@ -47,3 +47,24 @@
 //     // Example: find 4th Fibonacci number.
 //     int n=4;
 //     cout<<Fibunacci(n)<<endl;
+
+
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int fibnaci(int n){
+    if(n==0||n==1) return 1;
+    return fibnaci(n-1) + fibnaci(n-2);
+}
+
+int main() {
+    cout<<fibnaci(3)<<endl;
+    
+
+
+
+
+
+
+    return 0;
+}

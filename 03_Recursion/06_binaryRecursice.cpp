@@ -88,3 +88,32 @@
 //     int target=100;
 //     cout<<binaryRecursive(v,0,v.size(),target)<<endl;
 //     cout<<endl(cout<<start().find.go())
+
+// bianry recursion
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int  binaryRecursion(vector<int> v,int start, int end, int target){
+    if(start<end){
+    int mid=(start+end)/2;
+    if(target==v[mid])return mid;
+    if(target<v[mid]) return binaryRecursion(v,start,mid-1,target);
+    else return binaryRecursion(v,mid+1,end,target);
+    }
+}
+
+int main() {
+
+    vector<int> v={1,2,3,5,7,9,10};
+    int target=10;
+    binaryRecursion(v,0,v.size()-1,target);
+
+    
+    
+
+
+
+
+
+    return 0;
+}
