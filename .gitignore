@@ -27,8 +27,7 @@ a.out
 
 # Ignore typical executable files created during local builds
 # (some projects produce executables with no extension)
-/*
-# If a specific executable stays tracked, untrack it then commit. See README for details.
+# Do not ignore the entire repo root. Keep source folders tracked.
 # Compiled outputs anywhere in the repo tree.
 **/*.o
 **/*.obj
@@ -40,9 +39,7 @@ a.out
 **/*.dylib
 **/*.class
 **/a.out
-## Allow tracking two-digit-prefixed folders (e.g., 03_Recursion).
-## The broad ignore was causing new numbered folders to be hidden from git.
-## If you need to ignore specific folders, add explicit patterns instead.
+## Keep project folders and source files visible to Git.
 !00_DSA_Repo/
 !00_DSA_Repo/**
 !01_Time_Complexity/
@@ -50,9 +47,15 @@ a.out
 !02_STL/
 !02_STL/**
 !03_Recursion/
-03_Recursion/**
+!03_Recursion/**
 !03_Recursion/*.cpp
 !03_Recursion/**/*.cpp
+!04_Arrays/
+!04_Arrays/**
+!100_RoadmapAndMaterial/
+!100_RoadmapAndMaterial/**
+!practice/
+!practice/**
 !Practice.cpp
 !**/*.cpp
 
@@ -73,3 +76,10 @@ a.out
 Practice
 # Local-only files
 Practice.cpp
+
+# .gitignore additions
+
+# Ignore local build artifacts and macOS metadata
+.DS_Store
+**/.DS_Store
+**/findLargestElimentInArray
