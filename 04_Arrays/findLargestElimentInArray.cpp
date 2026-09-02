@@ -22,3 +22,38 @@
 
 //     return 0;
 // }
+
+
+
+
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // find Largest 
+    // vector<int> v={1,2,4,2,6,7,19,8};
+    // int size=v.size(),le=v[0];
+    // for(int i=0;i<size;i++){
+    //     if(v[i]>le)le=v[i];
+    // }
+    // cout<<le<<endl;
+
+    // find Second Largest
+    vector<int> v={1,2,3,5,8,19,299,783};
+    int sz=v.size(),le=v[0],sle=v[0];
+    for(int i=0;i<sz;i++){
+        if(v[i]>le)le=v[i];
+    }
+    cout<<le<<endl;
+    for(int i=0;i<sz;i++){
+        if(v[i]>sle && v[i]<le)sle=v[i];
+    }
+    cout<<sle<<endl;
+
+
+
+
+    return 0;
+}
