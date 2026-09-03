@@ -53,7 +53,15 @@ int main() {
     cout<<sle<<endl;
 
 
+    // find largest and than second largest 
+    // vector<int> v={2,3,5,34,2,242345,88};
+    // int le=v[0],sle=v[0];
+    // for (auto  i:v){
+    //     if(i>le)le=i;
+    // }
+    // for(int i:v) if(i>sle && i<le)sle=i;
 
+    // cout<<le<<" "<<sle<<endl;
 
     return 0;
 }
