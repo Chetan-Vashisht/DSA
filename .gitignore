@@ -51,7 +51,8 @@ a.out
 !03_Recursion/*.cpp
 !03_Recursion/**/*.cpp
 !04_Arrays/
-!04_Arrays/**
+04_Arrays/*
+!04_Arrays/**/*.cpp
 !100_RoadmapAndMaterial/
 !100_RoadmapAndMaterial/**
 !practice/

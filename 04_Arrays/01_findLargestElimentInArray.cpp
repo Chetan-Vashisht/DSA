@@ -41,27 +41,39 @@ int main() {
     // cout<<le<<endl;
 
     // find Second Largest
-    vector<int> v={1,2,3,5,8,19,299,783};
-    int sz=v.size(),le=v[0],sle=v[0];
-    for(int i=0;i<sz;i++){
-        if(v[i]>le)le=v[i];
-    }
-    cout<<le<<endl;
-    for(int i=0;i<sz;i++){
-        if(v[i]>sle && v[i]<le)sle=v[i];
-    }
-    cout<<sle<<endl;
-
-
-    // find largest and than second largest 
-    // vector<int> v={2,3,5,34,2,242345,88};
-    // int le=v[0],sle=v[0];
-    // for (auto  i:v){
-    //     if(i>le)le=i;
+    // vector<int> v={1,2,3,5,8,19,299,783};
+    // int sz=v.size(),le=v[0],sle=v[0];
+    // for(int i=0;i<sz;i++){
+    //     if(v[i]>le)le=v[i];
     // }
-    // for(int i:v) if(i>sle && i<le)sle=i;
+    // cout<<le<<endl;
+    // for(int i=0;i<sz;i++){
+    //     if(v[i]>sle && v[i]<le)sle=v[i];
+    // }
+    // cout<<sle<<endl;
 
-    // cout<<le<<" "<<sle<<endl;
+    
+    // second largest
+    vector <int> v={1,4,6,7,2,3,9};
+    int le=INT_MIN,sle=INT_MIN;
+    // for(int i=0;i<v.size();i++){
+    //     if(v[i]>le ) le=v[i];
+    // }
+    // for(int i=0;i<v.size();i++){
+    //     if(v[i]>sle && v[i]<le) sle=v[i];
+    // }
+    // // cout<<"le: "<<le<<"  sle: "<<sle<<endl;
+    
+    // optimal approach
+    for(int i=0;i<v.size();i++){
+        if(v[i]>le){
+            sle=le;
+            le=v[i];
+        }
+    }
+    cout<<"le: "<<le<<"  sle: "<<sle<<endl;
+
+
 
     return 0;
 }
